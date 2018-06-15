@@ -3,7 +3,7 @@ var http = require('http');
 
 var app = express();
 var dataFile = require('./data/data.json');
-var io = require('socket.io')();
+// var io = require('socket.io')();
 
 console.log(`listening to port ${process.env.PORT || 3000}`);
 http.createServer(function (req, res) {
