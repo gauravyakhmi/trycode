@@ -16,6 +16,6 @@
     "express-middleware": "^3.0.0",
     "iconv-lite": "^0.4.23",
     "reload": "^2.3.0",
-    "socket.io": "^1.4.8"
+    "socket.io": "^2.1.1"
   }
 }
