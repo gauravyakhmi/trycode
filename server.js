@@ -10,6 +10,16 @@ app.set('appData', dataFile);
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
+app.locals.siteTitle = 'Roux Meetups';
+app.locals.allSpeakers = dataFile.speakers;
+
+app.use(express.static('public'));
+app.use(require('./routes/index'));
+app.use(require('./routes/speakers'));
+app.use(require('./routes/feedback'));
+app.use(require('./routes/api'));
+app.use(require('./routes/chat'));
+
 console.log(`listening to port ${process.env.PORT || 3000}`);
 http.createServer(function (req, res) {
 
