@@ -1,12 +1,22 @@
 {
-  "name": "application-name",
-  "version": "2.0.0",
+  "name": "try-code",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node server"
-  },  
+  },
+  "author": "Gaurav Yakhmi",
 "license": "Apache",
 "engines": {
     "node": "~0.10.0 || ~4.2.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap": "^4.1.1",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "jquery": "^3.3.1",
+    "reload": "^1.0.0",
+    "socket.io": "^1.4.8"
   }
 }
