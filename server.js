@@ -1,6 +1,6 @@
 var express = require('express');
 var http = require('http');
-var reload = require('reload');
+//var reload = require('reload');
 var app = express();
 var dataFile = require('./data/data.json');
 var io = require('socket.io')();
@@ -19,7 +19,7 @@ app.use(require('./routes/speakers'));
 app.use(require('./routes/feedback'));
 app.use(require('./routes/api'));
 app.use(require('./routes/chat'));
-app.use(require('./routes/components'));
+//app.use(require('./routes/components'));
 
 var server = app.listen(app.get('port'), function() {
   console.log(`Listening on port ${app.get('port')}`);
@@ -32,4 +32,4 @@ io.on('connection', function(socket) {
   });
 });
 
-reload(server, app, true);
+//reload(server, app, true);
