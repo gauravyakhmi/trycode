@@ -25,6 +25,7 @@ $("#contactForm").validator().on("submit", function(event) {
     }
 });
 function submitForm() {
+  debugger;
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
@@ -46,6 +47,7 @@ function submitForm() {
     });
 }
 function formSuccess() {
+  debugger;
     $("#contactForm")[0].reset();
     submitMSG(true, "Message Submitted!")
 }
