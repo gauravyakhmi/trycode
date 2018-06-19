@@ -1,0 +1,23 @@
+{
+  "players": [{
+    "name": "Sakshi Sagoria",
+    "designation" : "Founder and CEO",
+    "bio" : "We are competent to carve out the right balance between look and feel of your website and its functional aspects. Start your journey of technological innovation with dedicated and experienced web designers to bring unconventional websites for your business.",
+    "pic": "Lorenzo_Garcia_01_tn.jpg"
+  },{
+    "name": "Gaurav Yakhmi",
+    "designation" : "Chief Technology Officer",
+    "bio" : "We are competent to carve out the right balance between look and feel of your website and its functional aspects. Start your journey of technological innovation with dedicated and experienced web designers to bring unconventional websites for your business.",
+    "pic": "Lorenzo_Garcia_01_tn.jpg"
+  },{
+    "name": "Mandeep Singh",
+    "designation" : "Director, Operations",
+    "bio" : "We are competent to carve out the right balance between look and feel of your website and its functional aspects. Start your journey of technological innovation with dedicated and experienced web designers to bring unconventional websites for your business.",
+    "pic": "Lorenzo_Garcia_01_tn.jpg"
+  },{
+    "name": "Smith",
+    "designation" : "Director, Marketing",
+    "bio" : "We are competent to carve out the right balance between look and feel of your website and its functional aspects. Start your journey of technological innovation with dedicated and experienced web designers to bring unconventional websites for your business.",
+    "pic": "Lorenzo_Garcia_01_tn.jpg"
+  }]
+}
