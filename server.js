@@ -7,7 +7,7 @@ var dataFile = require('./data/data.json');
 var siteContent = require('./data/siteContent.json');
 var teamPlayers = require('./data/teamPlayers.json');
 var io = require('socket.io')();
-const nodeMailer = require('nodemailer');
+var nodeMailer = require('nodemailer');
 //
 app.set('port', process.env.PORT || 3000 );
 app.set('appData', dataFile);
@@ -35,7 +35,7 @@ var server = app.listen(app.get('port'), function() {
 
 app.post('/sendEmail', function(req, res) {
   console.log('new message');
-  const output = `
+  var output = `
     <p> you have a new contact request</p>
     <h3> contact detals</h3>
     <ul>
@@ -48,7 +48,7 @@ app.post('/sendEmail', function(req, res) {
 
     console.log('new message');
   // create reusable transporter object using the default SMTP transport
-  let transporter = nodeMailer.createTransport({
+  var transporter = nodeMailer.createTransport({
       host: 'smtp.office365.com',
       port: 587,
       secure: false, // true for 465, false for other ports
@@ -62,7 +62,7 @@ app.post('/sendEmail', function(req, res) {
   });
 console.log(req);
   // setup email data with unicode symbols
-  let mailOptions = {
+  var mailOptions = {
       from: '"CodeAdapt Sales" <info@codeadapt.com>', // sender address
       to: 'gauravyakhmi@gmail.com', // list of receivers
       subject: 'Hello', // Subject line
