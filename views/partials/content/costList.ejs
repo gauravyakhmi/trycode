@@ -1,0 +1,12 @@
+<!-- Item 1 -->
+<% allCosts.forEach(function(item) { %>
+<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 bottomReveal" data-sr-id="10">
+  <ul class="plan plan1 featured">
+    <li class="plan-name"><%= item.name %></li>
+    <li class="plan-price"><strong>$<%= item.price %></strong></li>
+    <li class="plan-action">
+      <a class="btn btn-default btn-lg" href="#">View Details</a>
+    </li>
+  </ul>
+</div><!-- /.column -->
+<%  }); %>
