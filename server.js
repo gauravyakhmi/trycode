@@ -1,7 +1,7 @@
 var http = require('http');
 var express = require('express');
 var reload = require('reload');
-var router = express.Router();
+// var router = express.Router();
 var app = express();
 var dataFile = require('./data/data.json');
 var siteContent = require('./data/siteContent.json');
@@ -90,4 +90,4 @@ io.on('connection', function(socket) {
   });
 });
 
-reload(server, app, true);
+// reload(server, app, true);
