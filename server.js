@@ -48,39 +48,39 @@ app.post('/sendEmail', function(req, res) {
 
     console.log('new message');
   // create reusable transporter object using the default SMTP transport
-//   var transporter = nodeMailer.createTransport({
-//       host: 'smtp.office365.com',
-//       port: 587,
-//       secure: false, // true for 465, false for other ports
-//       auth: {
-//           user: 'info@codeadapt.com', // generated ethereal user
-//           pass: 'CodeAdapt@123' // generated ethereal password
-//       },
-//       tls: {
-//         rejectUnauthorized: false
-//       }
-//   });
-// console.log(req);
-//   // setup email data with unicode symbols
-//   var mailOptions = {
-//       from: '"CodeAdapt Sales" <info@codeadapt.com>', // sender address
-//       to: 'gauravyakhmi@gmail.com', // list of receivers
-//       subject: 'Hello', // Subject line
-//       text: output, // plain text body
-//       html: output // html body
-//   };
-//
-//   // send mail with defined transport object
-//   transporter.sendMail(mailOptions, (error, info) => {
-//     console.log('error' +  error);
-//       if (error) {
-//           return console.log(error);
-//       }
-//       console.log('Message sent: %s', info.messageId);
-//       // Preview only available when sending through an Ethereal account
-//       console.log('Preview URL: %s', nodeMailer.getTestMessageUrl(info));
-//
-//   });
+  var transporter = nodeMailer.createTransport({
+      host: 'smtp.office365.com',
+      port: 587,
+      secure: false, // true for 465, false for other ports
+      auth: {
+          user: 'info@codeadapt.com', // generated ethereal user
+          pass: 'CodeAdapt@123' // generated ethereal password
+      },
+      tls: {
+        rejectUnauthorized: false
+      }
+  });
+  console.log(req);
+  // setup email data with unicode symbols
+  var mailOptions = {
+      from: '"CodeAdapt Sales" <info@codeadapt.com>', // sender address
+      to: 'gauravyakhmi@gmail.com', // list of receivers
+      subject: 'Hello', // Subject line
+      text: output, // plain text body
+      html: output // html body
+  };
+
+  // send mail with defined transport object
+  transporter.sendMail(mailOptions, (error, info) => {
+    console.log('error' +  error);
+      if (error) {
+          return console.log(error);
+      }
+      console.log('Message sent: %s', info.messageId);
+      // Preview only available when sending through an Ethereal account
+      console.log('Preview URL: %s', nodeMailer.getTestMessageUrl(info));
+
+  });
 });
 
 io.attach(server);
