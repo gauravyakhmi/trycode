@@ -34,6 +34,12 @@ var server = app.listen(app.get('port'), function() {
 });
 
 app.post('/sendEmail', function(req, res) {
+  res.writeHead(200, {
+    'Content-Type': 'text/html',
+    'Content-Length': html.length,
+    'Expires': new Date().toUTCString()
+  });
+
   console.log('new message');
   var output = `
     <p> you have a new contact request</p>
@@ -81,6 +87,7 @@ app.post('/sendEmail', function(req, res) {
       console.log('Preview URL: %s', nodeMailer.getTestMessageUrl(info));
 
   });
+    res.end("Email sent");
 });
 
 io.attach(server);
