@@ -5,21 +5,20 @@ var reload = require('reload');
 var app = express();
 var dataFile = require('./data/data.json');
 var siteContent = require('./data/siteContent.json');
-var teamPlayers = require('./data/teamPlayers.json');
 var io = require('socket.io')();
 //var nodeMailer = require('nodemailer');
 
 app.set('port', process.env.PORT || 3000 );
 app.set('appData', dataFile);
 app.set('siteContent', siteContent);
-app.set('teamPlayers', teamPlayers);
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
-app.locals.siteTitle = 'CodeAdapt - Seattle Digital Marketting & SEO Company';
+app.locals.siteTitle = 'Home - CodeAdapt - Seattle Digital Marketting & SEO Company';
 app.locals.allSpeakers = dataFile.speakers;
 app.locals.allServices = siteContent.services;
-app.locals.allTeamPlayers = teamPlayers.players;
+app.locals.allCosts = siteContent.costs;
+app.locals.allTeamPlayers = siteContent.players;
 
 app.use(express.static('public'));
 app.use(require('./routes/index'));
@@ -87,7 +86,7 @@ app.post('/sendEmail', function(req, res) {
       console.log('Preview URL: %s', nodeMailer.getTestMessageUrl(info));
 
   });
-    res.end("Email sent");
+    res.render("/", {msg: 'Email sent'});
 });
 
 io.attach(server);
