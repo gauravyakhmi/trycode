@@ -125,6 +125,35 @@ button:hover,
     border-color: #8980fe;
 }
 
+.btn-twitter.btn-fill {
+    color: white;
+    background-color: #55acee;
+    opacity: 0.8;
+}
+
+.btn-twitter.btn-fill:hover {
+    opacity: 1;
+}
+
+.btn-google.btn-fill {
+    color: white;
+    background-color: #dd4b39;
+    opacity: 0.8;
+}
+
+.btn-google.btn-fill:hover {
+    opacity: 1;
+}
+.btn-facebook.btn-fill {
+    color: white;
+    background-color: #3b5998;
+    opacity: 0.8;
+}
+
+.btn-facebook.btn-fill:hover {
+    opacity: 1;
+}
+
 .ticker {
     overflow: hidden;
     height: 70px;
