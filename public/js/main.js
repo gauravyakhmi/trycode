@@ -16,16 +16,17 @@ $('.process-box').hover(function() {
 
 /* ---- contact form ---- */
 $("#contactForm").validator().on("submit", function(event) {
+
     if (event.isDefaultPrevented()) {
         formError();
         submitMSG(false, "Did you fill in the form properly?");
+        console.log('submitting');
     } else {
         event.preventDefault();
-        submitForm();
+    //    submitForm();
     }
 });
 function submitForm() {
-  debugger;
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
