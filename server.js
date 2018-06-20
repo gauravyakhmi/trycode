@@ -6,7 +6,7 @@ var app = express();
 var dataFile = require('./data/data.json');
 var siteContent = require('./data/siteContent.json');
 var io = require('socket.io')();
-//var nodeMailer = require('nodemailer');
+var nodeMailer = require('nodemailer');
 
 app.set('port', process.env.PORT || 3000 );
 app.set('appData', dataFile);
@@ -35,7 +35,6 @@ var server = app.listen(app.get('port'), function() {
 app.post('/sendEmail', function(req, res) {
   res.writeHead(200, {
     'Content-Type': 'text/html',
-    'Content-Length': html.length,
     'Expires': new Date().toUTCString()
   });
 
@@ -84,9 +83,10 @@ app.post('/sendEmail', function(req, res) {
       console.log('Message sent: %s', info.messageId);
       // Preview only available when sending through an Ethereal account
       console.log('Preview URL: %s', nodeMailer.getTestMessageUrl(info));
+      res.render("/", {msg: 'Email sent'});
 
   });
-    res.render("/", {msg: 'Email sent'});
+
 });
 
 io.attach(server);
