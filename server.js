@@ -1,23 +1,23 @@
 var http = require('http');
 var express = require('express');
-var reload = require('reload');
-var path = require('path');
+// var reload = require('reload');
+//var path = require('path');
 // var router = express.Router
 var app = express();
 var dataFile = require('./data/data.json');
 var siteContent = require('./data/siteContent.json');
 var io = require('socket.io')();
 var nodeMailer = require('nodemailer');
-var sassMiddleWare = require('node-sass-middleware');
+// var sassMiddleWare = require('node-sass-middleware');
 
 // Note: you must place sass-middleware *before* `express.static` or else it will
 // not work.
-app.use(sassMiddleWare({
-  src: __dirname + '/sass',
-  dest: __dirname + '/public/css',
-  debug: true,
-  outputStyle: 'compressed'
-}));
+// app.use(sassMiddleWare({
+//   src: __dirname + '/sass',
+//   dest: __dirname + '/public/css',
+//   debug: true,
+//   outputStyle: 'compressed'
+// }));
 
 app.set('port', process.env.PORT || 3000 );
 app.set('appData', dataFile);
