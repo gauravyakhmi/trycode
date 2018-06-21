@@ -2,7 +2,7 @@
 <% allServices.forEach(function(item) { %>
 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" style="padding: 10px">
   <div class="services-box leftReveal" data-sr-id="13" >
-    <span class="pe-7s-airplay services-icon"></span>
+    <span class="pe-7s-<%= item.icon %> services-icon"></span>
     <h3 class="service-name"><%= item.title %></h3>
     <p class="text-small"><%= item.summary %></p>
     <button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item1-services">Info</button>
@@ -15,7 +15,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
                 </button>
-                <span class="pe-7s-airplay services-icon-2"></span>
+                <span class="pe-7s-<%= item.icon %> services-icon-2"></span>
                 <h4 class="service-title">Web Design</h4>
             </div>
             <div class="modal-body">
