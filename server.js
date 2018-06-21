@@ -1,12 +1,23 @@
 var http = require('http');
 var express = require('express');
 var reload = require('reload');
-// var router = express.Router();
+var path = require('path');
+// var router = express.Router
 var app = express();
 var dataFile = require('./data/data.json');
 var siteContent = require('./data/siteContent.json');
 var io = require('socket.io')();
 var nodeMailer = require('nodemailer');
+var sassMiddleWare = require('node-sass-middleware');
+
+// Note: you must place sass-middleware *before* `express.static` or else it will
+// not work.
+app.use(sassMiddleWare({
+  src: __dirname + '/sass',
+  dest: __dirname + '/public/css',
+  debug: true,
+  outputStyle: 'compressed'
+}));
 
 app.set('port', process.env.PORT || 3000 );
 app.set('appData', dataFile);
@@ -32,11 +43,11 @@ var server = app.listen(app.get('port'), function() {
   console.log(`Listening on port ${app.get('port')}`);
 });
 
-app.post('/sendEmail', function(req, res) {
-  res.writeHead(200, {
-    'Content-Type': 'text/html',
-    'Expires': new Date().toUTCString()
-  });
+app.post('/', function(req, res) {
+  // res.writeHead(200, {
+  //   'Content-Type': 'text/html',
+  //   'Expires': new Date().toUTCString()
+  // });
 
   console.log('new message');
   var output = `
@@ -83,9 +94,14 @@ app.post('/sendEmail', function(req, res) {
       console.log('Message sent: %s', info.messageId);
       // Preview only available when sending through an Ethereal account
       console.log('Preview URL: %s', nodeMailer.getTestMessageUrl(info));
-      res.render("/", {msg: 'Email sent'});
-
+      // res.render("contact", {msg: 'Email sent'});
   });
+
+  // res.render('/', {
+  //   pageTitle: 'Home',
+  //   pageID: 'home',
+  //   msg: 'Email sent'
+  // });
 
 });
 
@@ -95,5 +111,6 @@ io.on('connection', function(socket) {
     io.emit('updateMessages', data);
   });
 });
+
 
 // reload(server, app, true);
