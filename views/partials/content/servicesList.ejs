@@ -1,56 +1,322 @@
-<!-- Item 1 -->
-<% allServices.forEach(function(item) { %>
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" style="padding: 10px">
-  <div class="services-box leftReveal" data-sr-id="13" >
-    <span class="pe-7s-<%= item.icon %> services-icon"></span>
-    <h3 class="service-name"><%= item.title %></h3>
-    <p class="text-small"><%= item.summary %></p>
-    <button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item1-services">Info</button>
-  </div>
-</div><!-- /.column -->
-  <!-- Item 1 Modal -->
-<div class="modal fade" id="item1-services" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
+  <!-- Item 1 -->
+  <% allServices.forEach(function(item) { %>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" style="padding: 10px">
+      <div class="services-box leftReveal" data-sr-id="13" >
+        <span class="pe-7s-<%= item.icon %> services-icon"></span>
+        <h3 class="service-name"><%= item.title %></h3>
+        <p class="text-small"><%= item.summary %></p>
+        <button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item-services<%= item.section %>">View Details</button>
+      </div>
+    </div><!-- /.column -->
+
+    <!-- Item 1 Modal -->
+    <div class="modal fade" id="item-services1" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+      <div class="modal-content">
+      <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+      </button>
+      <span class="pe-7s-airplay services-icon-2"></span>
+      <h4 class="service-title">Web Design</h4>
+      </div>
+      <div class="modal-body">
+      <h5 class="heading-1 modal-heading mb20">Web designing</h5>
+      Are you losing customers and unable to meet your online marketing goals due to a poorly
+      <p>designed website? In today&#39;s highly competitive business world, having a well-designed website can help you
+        in accurately representing your brand and creating a dominant online presence. At CodeAdapt, we combine
+        cutting-edge technology with our efficient web design and development expertise for developing a high-
+        quality as well as fully functional website at affordable rates. Leveraging years of experience, we can help you
+        have the web portal that will not only look great but also meet the needs of you and your target audience.</p>
+
+      <h5 class="heading-1 modal-heading mb20">Stunning Designs Meet Functionality and Performance</h5>
+
+      <p>With a plethora of websites mushrooming every quarter, we at CodeAdapt understand that standing out
+        among the crowd is critical for your business, which is the reason why our services provide the best in
+        standard functionality and features while remaining fully customizable.</p>
+
+        <h5 class="heading-1 modal-heading mb20">Why Choose Us For Website Designing?</h5>
+
+        <p>1. Excellent user experience- From top-notch homepage designs to clear product pages, our highly-skilled and
+          seasoned designers put in painstaking efforts for creating an impeccable website.</p>
+
+          <p>2. Talented designers- The web design team at CodeAdapt are a group of individuals who all have one thing in
+            common: their enjoyment and love of web designing. Our web designers are known for an excellent level of
+            service and strong creativity in every project undertaken.</p>
+
+          <p>3. Optimized for leads- At CodeAdapt, we use cutting-edge technology and follow the latest conversion
+            research for building websites that are effective at turning website visitors into paying customers.</p>
+
+            <p>4. Attractive look- Leveraging years of experience, our technologically well-versed team goes above and
+              beyond in terms of creating an attractive website that is engaging enough to hold the viewer&#39;s attention.</p>
+
+              <h5 class="heading-1 modal-heading mb20">Turning Your Vision Into A Website!</h5>
+
+              <p>With a mission to be preferred as long run partners for our clients by earning their trust through enhancing
+                their growth, we at CodeAdapt leave no stones unturned in terms of making your site a fully integrated, user-
+                friendly conversion machine and building a website that&#39;ll build your business.</p>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+    <!-- Item 2 Modal -->
+    <div class="modal fade" id="item-services2" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+            </button>
+            <span class="pe-7s-airplay services-icon-2"></span>
+            <h4 class="service-title">Web Development</h4>
+          </div>
+          <div class="modal-body">
+            <h5 class="heading-1 modal-heading mb20">
+              How Web development services can work wonders for your business</h5>
+
+              <p>In today’s highly competitive world, it’s important to be on the web where people can recognize and
+                find you. If you don’t have a business website, that means your business is just confined to your
+                surroundings. This can be one of the major reasons you’re facing issues in growing your business.
+                So, what are you waiting for? Just take a step ahead and get a business website that can work
+                wonders for your business.</p>
+
+                How Code Adapt can help you grow your business:
+
+                <h5 class="heading-1 modal-heading mb20">Think beyond web design</h5>
+                <p>We have a team of skilled professionals that can offer you with the best web development services.
+                  These bunch of creative minds is well known for thinking out of the box and delivering high-quality
+                  results.</p>
+
+                  <h5 class="heading-1 modal-heading mb20">Work on your goals and challenges</h5>
+                  <p>Code Adapt is here to work for your goals and challenges. We pride ourselves in achieving the targets
+                    and goals of our clients in the best possible way.</p>
+
+                    <h5 class="heading-1 modal-heading mb20">Custom and unique design</h5>
+                    <p>With us, you’re guaranteed to receive a customized and unique design for your website. We believe
+                      that the website is a mirror to your business and that’s why we offer spectacular web design services.</p>
+
+                      <h5 class="heading-1 modal-heading mb20">Reliable website</h5>
+                      <p>In order to get a reliable and error-free website, you need to hire a reliable web design agency. Well,
+                        we are here to build a responsive website that can deliver huge benefits in the long run.</p>
+
+                        <h5 class="heading-1 modal-heading mb20">Increased revenue</h5>
+                        <p>The return on investment gets increased with a responsive website. You need to understand the fact
+                          that having a great website can definitely offer huge benefits in the near future.</p>
+
+                          <h3>Why choose us:</h3>
+                          <h5 class="heading-1 modal-heading mb20">  Strategic consultancy</h5>
+                          Reliable web development Development services
+                          Integration of websites and web applications
+                          Good customer support
+                          Guaranteed results
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+
+    <!-- Item 3 Modal -->
+    <div class="modal fade" id="item-services3" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+            </button>
+            <span class="pe-7s-airplay services-icon-2"></span>
+            <h4 class="service-title">Digital Marketing</h4>
+          </div>
+          <div class="modal-body">
+            <h5 class="heading-1 modal-heading mb20">
+              Why do we need Digital Marketing ?</h5>
+
+              <p>In present scenario, the term digital marketing allows you to market your product and
+                services on the internet using digital technologies. It is basically the marketing, advertising
+                and promotion of products and services of a brand through digital media to reach to your
+                audience. This is the reason due to which we need Digital Marketing today.
+                Digital marketing is a powerful tool to accelerate your business growth. It is more effective
+                tool than traditional marketing for your business to bring people to your website and
+                convert them to customers. It is a necessity for the big industries as it plays an important
+                role to optimize their company’s website for search engines. In this blog, we will describe
+                importance of digital marketing and why it is in great demand among various industries.</p>
+
+                <h5 class="heading-1 modal-heading mb20">Some reasons why digital marketing is important</h5>
+                <p>Following are some benefits of digital marketing due to which it is necessary for big
+                  industries:</p>
+
+                  <h5 class="heading-1 modal-heading mb20">1. Brand building</h5>
+                  <p>It helps to develop your brand by promoting it on several platforms
+                    because brand building is what every business is trying to accomplish. Your brand will earn
+                    more reputation in the eyes of users as well as search engines.</p>
+
+                    <h5 class="heading-1 modal-heading mb20">2. Better revenues</h5>
+                    <p>It ensures great revenues along with better conversion rates. It provides
+                      advantages to you and your business by opening the ways to bigger remote targeting
+                      markets both locally as well as abroad.</p>
+
+                      <h5 class="heading-1 modal-heading mb20">3. Cost reduction</h5>
+                      <p>It helps companies to save promotional costs for their products and
+                        services. Also, you can plan a successful online marketing strategy by considering your
+                        budget that offers an inexpensive techniques in comparison to other advertising channels.</p>
+
+                        <h5 class="heading-1 modal-heading mb20">4. Save time</h5>
+                        <p>It provides real time results with in no time and gives you an opportunity to
+                          see the number of visitors to your site and conversion rate within seconds.</p>
+
+                          <h5 class="heading-1 modal-heading mb20"> 5. Connect with mobile users</h5>
+                          <p>Mobile phones are the great source to reach billions of
+                            people across the world and digital marketing is a great way to get in touch with them.
+                            So those were some advantages, that describe the importance of digital marketing. Digital
+                            marketing allows a truly personalized marketing and gives business of any size an access to
+                            the mass market at affordable rates.</p>
+                          </div>
+                        </div><!-- /.modal-content -->
+                      </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+    <!-- Item 4 Modal -->
+    <div class="modal fade" id="item-services4" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+            </button>
+            <span class="pe-7s-airplay services-icon-2"></span>
+            <h4 class="service-title">App Development</h4>
+          </div>
+          <div class="modal-body">
+            <h5 class="heading-1 modal-heading mb20">
+            Need a responsive website</h5>
+
+              <p>As a premier Mobile APP Development Company, we have the skills, techniques, tools and experience to offer our clients cutting-edge apps for iOS, Windows and Android mobile phones that help their customers reach them anywhere, anytime.</p>
+
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+    <!-- Item 5 Modal -->
+    <div class="modal fade" id="item-services5" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+            </button>
+            <span class="pe-7s-airplay services-icon-2"></span>
+            <h4 class="service-title">Content Marketing</h4>
+          </div>
+          <div class="modal-body">
+            <h5 class="heading-1 modal-heading mb20">
+              PPC services</h5>
+
+              <p>Want to know the quickest and most effective way to get your business in front of the people
+                who are searching your services and products? Also known as paid search marketing or search engine
+                marketing, pay per click has emerged as the fastest and most reliable marketing model for directing traffic to
+                your web portal, through advertising on search engines, websites and directories. At CodeAdapt, we offer
+                high-quality and affordable pay per click services so you can quickly and easily get more customers and more
+                website visitors.</p>
+
+                <h5 class="heading-1 modal-heading mb20">The Difference We Deliver</h5>
+                <p>At CodeAdapt, our endeavor is to enlist ourselves into the minutest of the details in terms of offering high-
+                  quality PPC services, which doesn&#39;t fall short of our client&#39;s expectations and demands, not even by an inch.
+                  This is the reason why our client satisfaction rate is second to none. Backed by state-of-the-art technology and
+                  a team of highly-skilled and seasoned professionals, we go the extra mile in terms of devising and strategizing
+                  an efficient and unique PPC advertising campaign for your business.</p>
+
+                  <h5 class="heading-1 modal-heading mb20">Why Choose Us For PPC Services?</h5>
+
+                  <p>
+                    <h5 class="heading-1 modal-heading mb20">1. PPC strategy</h5>
+                  </p>
+                  <p>At CodeAdapt, our expert team will get to know your business, industry sector, competitors
+                    and USP&#39;s for tailoring a PPC campaign that is perfect for you. In addition, we will also help you in every step of
+                    the way in developing a strategy that is going to deliver you higher conversion rates and measurable results in
+                    one fell swoop.</p>
+
+                    <h5 class="heading-1 modal-heading mb20">2. Customer service</h5>
+                    <p>We take pride in our top-notch customer support service, which naturally contributes to
+                      our high customer satisfaction and retention rates.</p>
+
+                      <h5 class="heading-1 modal-heading mb20">3. Keyword research</h5>
+                      <p>Our team of highly-skilled experts go above and beyond in searching the right keywords
+                        to target your business, services and products. These keywords are used for creating AD groups as well as
+                        themed campaigns for related search phrases.</p>
+
+                        <h5 class="heading-1 modal-heading mb20">4. Affordable prices-</h5>
+                        <p>At CodeAdapt, we offer high-quality PPC services at a price that&#39;ll fit right into your
+                          budget.</p>
+
+                          <h5 class="heading-1 modal-heading mb20"> Grow Your Business With CodeAdapt&#39;s Professional PPC Assistance!</h5>
+                          <p>Driven by creativity and powered by loyalty, we at CodeAdapt, work for hours on end in developing a well-
+
+                            planned and well-structured PPC campaign that will help your business in creating a dominant online presence
+                            in no time!</p>
+                          </div>
+                        </div><!-- /.modal-content -->
+                      </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                    <!-- Item 6 Modal -->
+
+    <!-- Item 6 Modal -->
+    <div class="modal fade" id="item-services6" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
                 </button>
-                <span class="pe-7s-<%= item.icon %> services-icon-2"></span>
-                <h4 class="service-title">Web Design</h4>
-            </div>
-            <div class="modal-body">
-                Why do we need Digital Marketing ?
+                <span class="pe-7s-airplay services-icon-2"></span>
+                <h4 class="service-title">Email Marketing</h4>
+              </div>
+              <div class="modal-body">
+                <h5 class="heading-1 modal-heading mb20">
+                  Search Engine Optimization (SEO)</h5>
 
-In present scenario, the term digital marketing allows you to market your product and
-services on the internet using digital technologies. It is basically the marketing, advertising
-and promotion of products and services of a brand through digital media to reach to your
-audience. This is the reason due to which we need Digital Marketing today.
-Digital marketing is a powerful tool to accelerate your business growth. It is more effective
-tool than traditional marketing for your business to bring people to your website and
-convert them to customers. It is a necessity for the big industries as it plays an important
-role to optimize their company’s website for search engines. In this blog, we will describe
-importance of digital marketing and why it is in great demand among various industries.
-Some reasons why digital marketing is important
-Following are some benefits of digital marketing due to which it is necessary for big
-industries:
-1. Brand building- It helps to develop your brand by promoting it on several platforms
-because brand building is what every business is trying to accomplish. Your brand will earn
-more reputation in the eyes of users as well as search engines.
-2. Better revenues- It ensures great revenues along with better conversion rates. It provides
-advantages to you and your business by opening the ways to bigger remote targeting
-markets both locally as well as abroad.
-3. Cost reduction- It helps companies to save promotional costs for their products and
-services. Also, you can plan a successful online marketing strategy by considering your
-budget that offers an inexpensive techniques in comparison to other advertising channels.
-4. Save time- It provides real time results with in no time and gives you an opportunity to
-see the number of visitors to your site and conversion rate within seconds.
-5. Connect with mobile users- Mobile phones are the great source to reach billions of
-people across the world and digital marketing is a great way to get in touch with them.
-So those were some advantages, that describe the importance of digital marketing. Digital
-marketing allows a truly personalized marketing and gives business of any size an access to
-the mass market at affordable rates.
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<%  }); %>
+                  <p>No more need to compromise on the rankings of your websites. Hire CodeAdapt experts can
+                    secure high ranking for your website, achieved through unparalleled SEO strategies.
+
+                    SEO matters a lot for the growth of a business; after all, organic traffic offers cost-effective and
+                    long-term results. It converts more new customers as compared to other online marketing
+                    techniques. And we are here to let you make most of the opportunity offered by organic search.</p>
+
+                    <h5 class="heading-1 modal-heading mb20">SEO Services by CodeAdapt</h5>
+                    <p>We have profound experience in SEO and have achieved top search engine rankings for the
+                      businesses with different niches. Our team of experienced digital marketers and content writers
+                      knows that what it takes to make a website outstanding and achieve top rankings in the search
+                      engines.</p>
+
+                      <p>Along with optimizing your website for maximum traffic, we will also help you in brand building
+                        and in making your brand a reputed and trusted one.</p>
+
+                        <h5 class="heading-1 modal-heading mb20">What do our SEO services include?</h5>
+                        <p>We use tested and proven digital marketing techniques to enhance your business’s online
+                          presence. Our business centred and unparalleled SEO strategies help us deliver quality and
+                          targeted traffic to your website. Our SEO services include:</p>
+                          <ul>
+                            <li>Business analysis &amp; keyword research</li>
+                            <li>Competitor analysis</li>
+                            <li>Reputation management</li>
+                            <li>Website audit and optimization</li>
+                            <li>Link building</li>
+                            <li>Content creation and promotion</li>
+                            <li>Reporting and analysis</li>
+                          </ul>
+                          <h5 class="heading-1 modal-heading mb20">Why CodeAdapt?</h5>
+                          <p>We are dedicated to provide the best results to you and work for you the same way we work for
+
+                            our own projects. Here is what you can expect from us:</p>
+
+                            <ul>
+                              <li>Great expertise</li>
+                              <li>Business-centred approach</li>
+                              <li>Measurable results</li>
+                              <li>Quality services at affordable rates</li>
+                              <li>24-hour support</li>
+                            </ul>
+                            <p>We have a track record of delivering #1 ranking to a number of businesses.
+                            </p>
+
+                            <p>Feel free to get in touch!</p>
+
+                          </div>
+                        </div><!-- /.modal-content -->
+                      </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+                    <%  }); %>
