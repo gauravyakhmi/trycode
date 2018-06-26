@@ -1427,7 +1427,6 @@ ul.social-buttons li a:active {
 -------------------------------------------------------------- */
 .team-member-img {
 	border: 4px solid #2f2f2f;
-	height: 200px;
 }
 
 .team-member-box-2 .team-member-img {
@@ -1464,6 +1463,8 @@ ul.social-buttons li a:active {
 	margin: 0 auto;
 	border-radius: 100%;
 	overflow: hidden;
+	height: 225px;
+  width: 225px;
 }
 
 .team-image-wrapper .team-image-hover {
