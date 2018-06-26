@@ -1427,10 +1427,11 @@ ul.social-buttons li a:active {
 -------------------------------------------------------------- */
 .team-member-img {
 	border: 4px solid #2f2f2f;
+	height: 225px;
+	width: 225px;
 }
 
 .team-member-box-2 .team-member-img {
-    width: 225px;
     margin: auto;
 }
 
