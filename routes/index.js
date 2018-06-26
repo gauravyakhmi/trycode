@@ -14,7 +14,8 @@ router.get('/', function(req, res) {
     pageTitle: 'Home',
     artwork: pagePhotos,
     speakers: pageSpeakers,
-    pageID: 'home'
+    pageID: 'home',
+    msg: ''
   });
 
 });

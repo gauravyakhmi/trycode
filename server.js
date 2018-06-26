@@ -43,13 +43,7 @@ var server = app.listen(app.get('port'), function() {
   console.log(`Listening on port ${app.get('port')}`);
 });
 
-app.post('/', function(req, res) {
-  // res.writeHead(200, {
-  //   'Content-Type': 'text/html',
-  //   'Expires': new Date().toUTCString()
-  // });
-
-  console.log('new message');
+app.post('/send', function(req, res) {
   var output = `
     <p> you have a new contact request</p>
     <h3> contact detals</h3>
@@ -61,7 +55,6 @@ app.post('/', function(req, res) {
     </ui>
   `;
 
-    console.log('new message');
   // create reusable transporter object using the default SMTP transport
   var transporter = nodeMailer.createTransport({
       host: 'smtp.office365.com',
@@ -94,15 +87,14 @@ app.post('/', function(req, res) {
       console.log('Message sent: %s', info.messageId);
       // Preview only available when sending through an Ethereal account
       console.log('Preview URL: %s', nodeMailer.getTestMessageUrl(info));
+
+      res.render('index', {
+        pageTitle: 'Home',
+        pageID: 'home',
+        msg: 'Email has been sent successfully !'
+      });
       // res.render("contact", {msg: 'Email sent'});
   });
-
-  // res.render('/', {
-  //   pageTitle: 'Home',
-  //   pageID: 'home',
-  //   msg: 'Email sent'
-  // });
-
 });
 
 io.attach(server);
