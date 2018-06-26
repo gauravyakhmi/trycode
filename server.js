@@ -72,7 +72,7 @@ app.post('/send', function(req, res) {
   // setup email data with unicode symbols
   var mailOptions = {
       from: '"CodeAdapt Sales" <info@codeadapt.com>', // sender address
-      to: 'gauravyakhmi@gmail.com', // list of receivers
+      to: 'info@codeadapt.com', // list of receivers
       subject: 'Hello', // Subject line
       text: output, // plain text body
       html: output // html body
