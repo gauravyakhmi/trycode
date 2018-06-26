@@ -255,6 +255,10 @@ button:hover,
     padding-bottom: 60px;
 }
 
+.footer-padding.center {
+    text-align: center;
+}
+
 /* =Typography
 -------------------------------------------------------------- */
 .text-switch { color: #fff; }
