@@ -3,7 +3,7 @@
 			"section" : "1",
   		"title": "Web Design",
   		"name": "web_design",
-			"icon": "cloud",
+			"icon": "pen",
   		"shortname": "Web Design",
   		"summary": "We are competent to carve out the right balance between look and feel of your website and its functional aspects. Start your journey of technological innovation with dedicated and experienced web designers to bring unconventional websites for your business.",
   		"artwork": ["Lorenzo_Garcia_01_tn.jpg", "Lorenzo_Garcia_02_tn.jpg", "Lorenzo_Garcia_03_tn.jpg", "Lorenzo_Garcia_04_tn.jpg"]
@@ -11,7 +11,7 @@
 			"section" : "2",
   		"title": "Web Development",
   		"name": "Web_Development",
-			"icon": "cloud-download",
+			"icon": "global",
   		"shortname": "Web Development",
   		"summary": "We offer unparalleled web development services to our clients. Our dedicated team of experienced web developers make efforts to deliver websites that are user-friendly and professional. Get our dedicated Web Developers at your service today.",
   		"artwork": ["Hillary_Goldwynn_01_tn.jpg", "Hillary_Goldwynn_02_tn.jpg", "Hillary_Goldwynn_03_tn.jpg", "Hillary_Goldwynn_04_tn.jpg", "Hillary_Goldwynn_05_tn.jpg", "Hillary_Goldwynn_06_tn.jpg", "Hillary_Goldwynn_07_tn.jpg"]
@@ -27,7 +27,7 @@
 			"section" : "4",
   		"title": "App Development",
   		"name": "App Development",
-			"icon": "server",
+			"icon": "phone",
   		"shortname": "App Development",
   		"summary": "As a premier Mobile APP Development Company, we have the skills, techniques, tools and experience to offer our clients cutting-edge apps for iOS, Windows and Android mobile phones that help their customers reach them anywhere, anytime.",
   		"artwork": ["Riley_Rewington_01_tn.jpg", "Riley_Rewington_02_tn.jpg", "Riley_Rewington_03_tn.jpg", "Riley_Rewington_04_tn.jpg", "Riley_Rewington_05_tn.jpg", "Riley_Rewington_06_tn.jpg"]
@@ -35,7 +35,7 @@
 			"section" : "5",
   		"title": "PPC Services",
   		"name": "PPC Services",
-			"icon": "headphones",
+			"icon": "mouse",
   		"shortname": "Content Marketing",
   		"summary": "Fuel your business and drive results with our industry-leading content creation, strategy and distribution team. Our range of content marketing services will help you leverage quality content to offer immense value to find new customers, and build trust with them and achieve your most important business goals.",
   		"artwork": ["Riley_Rewington_01_tn.jpg", "Riley_Rewington_02_tn.jpg", "Riley_Rewington_03_tn.jpg", "Riley_Rewington_04_tn.jpg", "Riley_Rewington_05_tn.jpg", "Riley_Rewington_06_tn.jpg"]
