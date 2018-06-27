@@ -5,8 +5,68 @@
     <li class="plan-name"><%= item.name %></li>
     <li class="plan-price"><strong>$<%= item.price %></strong></li>
     <li class="plan-action">
-      <a class="btn btn-default btn-lg" href="#">View Details</a>
+      <!-- <a class="btn btn-default btn-lg" href="#">View Details</a> -->
+        <button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#price-services<%= item.section %>">View Details</button>
     </li>
   </ul>
 </div><!-- /.column -->
 <%  }); %>
+
+<!-- Item 1 Modal -->
+<div class="modal fade" id="price-services1" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+        </button>
+        <span class="pe-7s-cloud services-icon-2"></span>
+        <h4 class="service-title">SEO</h4>
+      </div>
+      <div class="modal-body">
+        <h5 class="heading-1 modal-heading mb20">SEO</h5>
+        <div>
+          <div>Basic</div>
+          Keywords Optimization <b>$150</b>
+          Site Analysis, Initial Backlinks Analysis, On Page & Content Marketing
+          <div>Premium</div>
+          15 Keywords Optimization <b>$200</b>
+          In-depth Site Analysis, Competitors Analysis & Review, On page & Brand Promotion
+          <div>Large</div>
+          20 Keywords Optimization <b>$250</b>
+          In-depth Site Analysis, Google Penalty Check Detailed Website Analysis , Website URL structure Analysis
+      </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Item 1 Modal -->
+<div class="modal fade" id="price-services4" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="ion-ios-close-empty"></span>
+        </button>
+        <span class="pe-7s-cloud services-icon-2"></span>
+        <h4 class="service-title">Website Design</h4>
+      </div>
+      <div class="modal-body">
+        <h5 class="heading-1 modal-heading mb20">Website Design</h5>
+        <div>
+          <div>Theme Based Website</div>
+          <p>5 Page Website <b>$49 (Monthly)</b></p>
+          <p>Including Web Design + Hosting + Domain + 5 Email ID + Content Writing</p>
+          <div>Basic</div>
+          1 Page Website <b>$100 (Wordpress)</b>
+          1 Page Website <b>$150 (Scratch)</b>
+          <div>Premium</div>
+          5 Pages Website <b>$150 (Wordpress)</b>
+          5 Pages Website <b>$250 (Scratch)</b>
+          <div>Large</div>
+          Upto 10 Pages Website <b>$300 (Wordpress)</b>
+          Upto 10 Pages Website <b>$400 (Scratch)</b>
+      </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
