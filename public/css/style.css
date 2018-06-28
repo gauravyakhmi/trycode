@@ -79,6 +79,28 @@ a:focus, a:hover {
     text-decoration: underline;
 }
 
+.top-social-header {
+		display: flex;
+		border-bottom: solid 1px #555;
+}
+
+.top-row {
+		display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+	  align-items: center;
+	  width: 100%;
+	  padding: 5px 25px;
+}
+
+.top-row-alignleft {
+	align-self: flex-start;
+}
+
+.top-row-alignright {
+	align-self: flex-end;
+}
+
 .mini-hr {
     border-style: solid none;
     border-color: #424242;
