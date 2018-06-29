@@ -101,6 +101,10 @@ a:focus, a:hover {
 	align-self: flex-end;
 }
 
+.navbar-fixed-top {
+	position: absolute;
+}
+
 .mini-hr {
     border-style: solid none;
     border-color: #424242;
