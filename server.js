@@ -1,3 +1,5 @@
+'use strict'; //so, we can use ES6
+
 var http = require('http');
 var express = require('express');
 // var reload = require('reload');
