@@ -16,14 +16,12 @@ $('.process-box').hover(function() {
 
 /* ---- contact form ---- */
 $("#contactForm").validator().on("submit", function(event) {
-
     if (event.isDefaultPrevented()) {
         formError();
         submitMSG(false, "Did you fill in the form properly?");
-        console.log('submitting');
     } else {
         event.preventDefault();
-    //    submitForm();
+        submitForm();
     }
 });
 function submitForm() {
@@ -48,7 +46,6 @@ function submitForm() {
     });
 }
 function formSuccess() {
-  debugger;
     $("#contactForm")[0].reset();
     submitMSG(true, "Message Submitted!")
 }
@@ -127,41 +124,41 @@ if (typeof sr == 'undefined') {
         delay: 50
     });
 }
-// Royal_Preloader.config({
-//     onComplete: function () {
-//         triggerReveals();
-//     }
-// });
-// function triggerReveals() {
-//     sr.reveal('.bottomReveal', {
-//         origin: 'bottom'
-//     }).reveal('.leftReveal', {
-//         origin: 'left'
-//     }).reveal('.rightReveal', {
-//         origin: 'right'
-//     }).reveal('.topReveal', {
-//         origin: 'top'
-//     });
-//
-//     sr.reveal('.rotateBottomReveal', {
-//         origin: 'bottom',
-//         rotate: { x: 90 }
-//     }).reveal('.rotateLeftReveal', {
-//         origin: 'left',
-//         rotate: { x: 90 }
-//     }).reveal('.rotateRightReveal', {
-//         origin: 'right',
-//         rotate: { x: 90 }
-//     }).reveal('.rotateTopReveal', {
-//         origin: 'top',
-//         rotate: { x: 90 }
-//     })
-//
-//     sr.reveal('.scaleReveal', {
-//         origin: 'top',
-//         scale: 0.6
-//     });
-// }
+Royal_Preloader.config({
+    onComplete: function () {
+        triggerReveals();
+    }
+});
+function triggerReveals() {
+    sr.reveal('.bottomReveal', {
+        origin: 'bottom'
+    }).reveal('.leftReveal', {
+        origin: 'left'
+    }).reveal('.rightReveal', {
+        origin: 'right'
+    }).reveal('.topReveal', {
+        origin: 'top'
+    });
+
+    sr.reveal('.rotateBottomReveal', {
+        origin: 'bottom',
+        rotate: { x: 90 }
+    }).reveal('.rotateLeftReveal', {
+        origin: 'left',
+        rotate: { x: 90 }
+    }).reveal('.rotateRightReveal', {
+        origin: 'right',
+        rotate: { x: 90 }
+    }).reveal('.rotateTopReveal', {
+        origin: 'top',
+        rotate: { x: 90 }
+    })
+
+    sr.reveal('.scaleReveal', {
+        origin: 'top',
+        scale: 0.6
+    });
+}
 
 /* ---- close mobile nav on click ---- */
 $(document).on('click','.navbar-collapse.in',function(e) {
@@ -173,7 +170,7 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 /* ---- rotater text ---- */
 var current = 1;
 var height = jQuery('.ticker').height();
-var numberDivs = jQuery('.ticker').children().length;
+var numberDivs = jQuery('.ticker').children().length; 
 var first = jQuery('.ticker h1:nth-child(1)');
 setInterval(function() {
     var number = current * -height;

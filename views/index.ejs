@@ -752,6 +752,7 @@ have seen quantifiable improvement in terms of site traffic, and keyword ranking
   <% include partials/template/footer.ejs %>
 
 	<!-- Javascript Files -->
+  <!-- Royal Preloader -->
 
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -761,7 +762,18 @@ have seen quantifiable improvement in terms of site traffic, and keyword ranking
 	<script type="text/javascript" src="js/form-validator.min.js"></script>
 	<script type="text/javascript" src="js/jquery.inview.min.js"></script>
 	<script type="text/javascript" src="js/jquery.countTo.js"></script>
-	<script type="text/javascript">
+  <!-- Parallax File -->
+	<script type="text/javascript" src="js/parallax.min.js"></script>
+
+  <script type="text/javascript" src="/js/royal_preloader.min.js"></script>
+  <script type="text/javascript">
+  Royal_Preloader.config({
+      mode:           'number',
+      showProgress:   false,
+      background:     '#1d1d1d'
+  });
+
+
 		/* ---- Counter (our count) ---- */
 		$('#ourcount').one('inview', function(event, isInView) {
 			if (isInView) {
@@ -771,9 +783,9 @@ have seen quantifiable improvement in terms of site traffic, and keyword ranking
 	</script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/scrollreveal.min.js"></script>
-	<script type="text/javascript" src="js/style-switcher.js"></script><!-- Remove for production -->
-	<script type="text/javascript" src="js/main.js"></script>
+	<!-- <script type="text/javascript" src="js/style-switcher.js"></script> -->
 
+	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>
