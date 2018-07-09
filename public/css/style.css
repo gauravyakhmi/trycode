@@ -181,6 +181,11 @@ button:hover,
     opacity: 1;
 }
 
+.team-players {
+		display: flex;
+		justify-content: center;
+}
+
 .ticker {
     overflow: hidden;
     height: 70px;
