@@ -48,7 +48,7 @@ var server = app.listen(app.get('port'), function() {
 app.post('/send', function(req, res) {
   var output = `
     <p> you have a new contact request</p>
-    <h3> contact detals</h3>
+    <h3> contact details</h3>
     <ul>
       <li>Subject: ${req.body.subject}</li>
       <li>Name: ${req.body.name}</li>
