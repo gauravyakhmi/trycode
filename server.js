@@ -27,7 +27,7 @@ app.set('siteContent', siteContent);
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
-app.locals.siteTitle = 'Seattle SEO Company &amp; Digital Marketing Agency - Code Adapt';
+app.locals.siteTitle = 'Seattle SEO Company and Digital Marketing Agency - Code Adapt';
 app.locals.allSpeakers = dataFile.speakers;
 app.locals.allServices = siteContent.services;
 app.locals.allCosts = siteContent.costs;
