@@ -53,6 +53,7 @@ app.post('/send', function(req, res) {
       <li>Subject: ${req.body.subject}</li>
       <li>Name: ${req.body.name}</li>
       <li>Phone: ${req.body.phone}</li>
+      <li>Service Name: ${req.body.service}</li>
       <li>Message: ${req.body.message}</li>
     </ui>
   `;
