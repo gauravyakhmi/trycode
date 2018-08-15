@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head><% include partials/template/head.ejs %></head>
+  <head>
+    <% include partials/template/head.ejs %>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122496814-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-122496814-1');
+    </script>
+  </head>
   <body class="" data-spy="scroll" data-target=".navbar" data-offset="70">
     <div class="parallax-mirror">
       <img class="parallax-slider" src="images/slider1.jpg" style="transform: translate3d(0px, -494.6px, 0px); position: absolute; height: 794px; width: 100%; max-width: none;">
