@@ -997,6 +997,7 @@ ul.social-buttons li a:active {
 }
 
 .navbar-right .free-quotes {
+	display: none;
 	background: #2eb50b;
 	align-self: center;
 	color: #fff;
