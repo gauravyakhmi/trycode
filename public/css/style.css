@@ -81,13 +81,13 @@ a:focus, a:hover {
 
 .top-social-header {
 		display: flex;
-		border-bottom: solid 1px #555;
+		border-bottom: solid 1px #333;
 }
 
 .top-row {
 		display: flex;
 	  flex-direction: row;
-	  justify-content: space-between;
+	  justify-content: flex-end;
 	  align-items: center;
 	  width: 100%;
 	  padding: 5px 25px;
@@ -98,7 +98,8 @@ a:focus, a:hover {
 }
 
 .top-row-alignright {
-	align-self: flex-end;
+	align-self: center;
+	margin-right: 20px;
 }
 
 .navbar-fixed-top {
@@ -993,6 +994,23 @@ ul.social-buttons li a:active {
 
 .navbar-right {
     margin-right: 15px;
+}
+
+.navbar-right .free-quotes {
+	background: #2eb50b;
+	align-self: center;
+	color: #fff;
+	line-height: 3.3;
+	font-weight: 400;
+	font-size: 1.1em;
+	padding: 10px 15px;
+	border-radius: 25px;
+}
+
+.navbar-right .free-quotes #free-quotes-text {
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
