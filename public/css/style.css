@@ -81,7 +81,6 @@ a:focus, a:hover {
 
 .top-social-header {
 		display: flex;
-		border-bottom: solid 1px #333;
 }
 
 .top-row {
@@ -185,6 +184,8 @@ button:hover,
 .team-players {
 		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
 }
 
 .ticker {
@@ -1364,7 +1365,7 @@ ul.social-buttons li a:active {
     margin-bottom: 15px;
     margin-top: 15px;
 		color: indianred;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -1392,6 +1393,10 @@ ul.social-buttons li a:active {
     -moz-transition: 0.6s;
     -o-transition: 0.6s;
     transition: 0.6s;
+}
+
+.box-header {
+	display: flex;
 }
 
 /* =About

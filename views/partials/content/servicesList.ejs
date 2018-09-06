@@ -2,8 +2,10 @@
   <% allServices.forEach(function(item) { %>
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" style="padding: 10px">
       <div class="services-box leftReveal" data-sr-id="13" >
-        <span class="pe-7s-<%= item.icon %> services-icon"></span>
-        <h3 class="service-name"><%= item.title %></h3>
+        <div class="box-header">
+          <span class="pe-7s-<%= item.icon %> services-icon"></span>
+          <h3 class="service-name"><%= item.title %></h3>
+        </div>
         <p class="text-small"><%= item.summary %></p>
         <button type="button" class="btn btn-default mt10" data-toggle="modal" data-target="#item-services<%= item.section %>">View Details</button>
       </div>
