@@ -1393,13 +1393,13 @@ ul.social-buttons li a:active {
 -------------------------------------------------------------- */
 .services-icon {
     font-size: 40px;
-    color: #8980fe;
+    color: #673919;
 }
 
 .service-name {
     margin-bottom: 15px;
     margin-top: 15px;
-		color: indianred;
+		color: #673919;
     font-size: 1.1em;
     font-weight: bold;
 }
